@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Warnings Test",
+      "setup": "cmake -B Builds; make -C Builds > compile_output.txt 2>&1",
+      "run": "printf '\\n\\nRunning test...\\n\\n'; if grep -i 'warning' compile_output.txt; then echo 'Compiler warnings found.'; exit 1; else echo 'No compiler warnings.'; exit 0; fi",
+      "input": "",
+      "output": "No compiler warnings.",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 2
+    },
+    {
+      "name": "Compile Test",
+      "setup": "cmake -B Builds; make -C Builds --silent",
+      "run": "printf '\\n\\nRunning test...\\n\\n'; ./Builds/Assignment_1 compile",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 16
+    },
+    {
+      "name": "Compare Test",
+      "setup": "cmake -B Builds; make -C Builds --silent",
+      "run": "printf '\\n\\nRunning test...\\n\\n'; ./Builds/Assignment_1 compare",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 40
+    },
+    {
+      "name": "Values Test",
+      "setup": "cmake -B Builds; make -C Builds --silent",
+      "run": "printf '\\n\\nRunning test...\\n\\n'; ./Builds/Assignment_1 values",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 40
+    },
+    {
+      "name": "Memory Errors test",
+      "setup": "cmake -B Builds; make -C Builds --silent; sudo apt-get update > /dev/null; sudo apt-get install valgrind > /dev/null",
+      "run": "valgrind --tool=memcheck --leak-check=full --error-exitcode=1 ./Builds/Assignment_1 compare",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 2
+    }
+  ]
+}
