@@ -6,10 +6,10 @@
   "total_effort_hours" : 0,
   "students": [
     {
-      "name " : "Your Name",
-      "pid"   : "Your ID",
-      "email" : "Your Email",
-      "os"    : "You operating system (Windows, MacOS, Linux)"
+      "name " : "Jason Li",
+      "pid"   : "A16369754",
+      "email" : "Jal042@ucsd.edu",
+      "os"    : "MacOS"
     }
   ]
 }
