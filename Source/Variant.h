@@ -3,6 +3,7 @@
 #include <optional>
 #include <string>
 #include <optional>
+#include <cstring>
 
 namespace ECE141
 {

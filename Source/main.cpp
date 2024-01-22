@@ -113,9 +113,12 @@ int printTestMessage(const std::string& argument, const bool hasPassed) {
 
 int main(int argc, const char* argv[]) {
     
-    printTestMessage("compile", true);
-    printTestMessage("values", doValueTests());
-    printTestMessage("compare", doCompareTests());
+//    printTestMessage("compile", true);
+//    printTestMessage("values", doValueTests());
+//    printTestMessage("compare", doCompareTests());
+//    
+//    ECE141::Variant theV0("pringtin");
+//    std::cout << theV0;
     
     if (argc > 1) {
         const std::string argument(argv[1]);
