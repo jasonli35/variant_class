@@ -1,0 +1,44 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "32ec62088e7e25a37301330744544c5f3b023b001c9686eb1987d4aaf839edb8"
+    }
+  ],
+  "containerPath" : "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/Assignment_1.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/jasonli/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jasonli/Library/Developer/Xcode/DerivedData/Assignment_1-eiotckkyylybpogaktkidphqhcyg/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jasonli/Library/Developer/Xcode/DerivedData/Assignment_1-eiotckkyylybpogaktkidphqhcyg/Index.noindex/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -2,25 +2,57 @@
 #include <iostream>
 #include <optional>
 #include <string>
+#include <optional>
 
 namespace ECE141
 {
+
+    enum class VariantType { intType, floatType, stringType };
+
     class Variant
     {
     public:
         // ---Constructors---
+        
         Variant(int aValue);
         Variant(float aValue);
         Variant(const char* aValue);
-
-        // ---TODO: Add other OCF methods---
-
-        // ---TODO: Add variant methods---
+        
+        
+        Variant(const Variant & aCopy);
+        Variant& operator=(const Variant & aCopy);
+        ~Variant(){};
+       
+        Variant& operator=(int aValue);
+        Variant& operator=(float aValue);
+        Variant& operator=(const char* aValue);
+        
+        std::optional<int> asInt() const;            // Retrieve value as int
+        std::optional<float> asFloat() const;        // Retrieve value as float
+        std::string asString() const; // Retrieve value as string
+        VariantType getType() const; // Get current type of variant
+        
+        bool isComparable(Variant aVar) const;
+        std::optional<int> compare_var(Variant other_variant) const;
+        
+        std::optional<bool> operator==(Variant aVar) const;
+        std::optional<bool> operator!=(Variant aVar) const;
+        std::optional<bool> operator<(Variant aVar) const;
+        std::optional<bool> operator<=(Variant aVar) const;
+        std::optional<bool> operator>(Variant aVar) const;
+        std::optional<bool> operator>=(Variant aVar) const;
+       
+        
+        
 
         friend std::ostream& operator<<(std::ostream& aStream, const Variant& aVariant);
 
     protected:
         // ---TODO: Add member variables---
+        VariantType type;
+        int intValue;
+        float fValue;
+        std::string cValue;
 
     };
 

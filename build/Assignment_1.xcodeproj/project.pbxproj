@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		855F385D816647F5966C8CC6 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6670A6DBB9BD4B6A8921A704 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A2C9DE633C08BC6E9362A350 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				C85988B2EC6745E3BF389F32 /* PBXTargetDependency */,
+				9E3D21F93CC24241B8D87AD4 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		EEACE15A87FB4DAD885A958B /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9954DCC4351D4F48AC11246E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				ED0E8E051438F4B626990A53 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3559604A18914928A74B17F6 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 3C244F4BE10E4FF4B31C23C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */; };
+		60824BD61B534E958EF95006 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.h */ = {isa = PBXBuildFile; fileRef = 4954B8102B2345CE9D8B98C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.h */; };
+		9794BC5C2BCC46CCA6809555 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/main.cpp */ = {isa = PBXBuildFile; fileRef = 26BA346962184231966BAE92 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/main.cpp */; };
+		D056BE3AB5E941BBB52680C3 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Testable.h */ = {isa = PBXBuildFile; fileRef = 5FCC9215759147C79DB480B5 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Testable.h */; };
+		E7718CB97AFB4E28AAEF6AB0 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.cpp */ = {isa = PBXBuildFile; fileRef = 1774256652F14F6CAEB2BBF0 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		075EA5820D6F4A0FA6DD6BA3 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		5E22E29F6B024988BC8492AE /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		634D5955C7CB4176A0DEE205 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		F18EC33A11CB4EAABC4DE748 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		2949552E05594738844A6AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8892E2AFCFA4B909BB196B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A764D230FD24D5684CFE947;
+			remoteInfo = Assignment_1;
+		};
+		65BDC2B31BC74167961CBB33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8892E2AFCFA4B909BB196B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEACE15A87FB4DAD885A958B;
+			remoteInfo = ZERO_CHECK;
+		};
+		D70F7BC4671640BE9F6B3F19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8892E2AFCFA4B909BB196B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEACE15A87FB4DAD885A958B;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1774256652F14F6CAEB2BBF0 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Variant.cpp; path = Source/Variant.cpp; sourceTree = SOURCE_ROOT; };
+		23EFD09FC1AF43E3909C7505 /* Assignment_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Assignment_1; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BA346962184231966BAE92 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = Source/main.cpp; sourceTree = SOURCE_ROOT; };
+		3C244F4BE10E4FF4B31C23C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4954B8102B2345CE9D8B98C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Variant.h; path = Source/Variant.h; sourceTree = SOURCE_ROOT; };
+		5FCC9215759147C79DB480B5 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Testable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Testable.h; path = Source/Testable.h; sourceTree = SOURCE_ROOT; };
+		ADB66D144D3D474BAEBFBD0D /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E64308CE31A84DEF8E680030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EEF6F2F3E2246FCA3E4D555 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		40887FE018C640BEA0CFA817 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3EEF6F2F3E2246FCA3E4D555 /* CMake Rules */,
+				ADB66D144D3D474BAEBFBD0D /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		75C00DC10D2242578FBEA5AF /* Assignment_1 */ = {
+			isa = PBXGroup;
+			children = (
+				F90D7C03494541E1AC6E83D5 /* Header Files */,
+				B0FDACB96C344B39A6032010 /* Source Files */,
+				3C244F4BE10E4FF4B31C23C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/CMakeLists.txt */,
+			);
+			name = Assignment_1;
+			sourceTree = "<group>";
+		};
+		B0FDACB96C344B39A6032010 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1774256652F14F6CAEB2BBF0 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.cpp */,
+				26BA346962184231966BAE92 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		C89793C50A294972B1CD1D4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1F9D5DAC5334ED68B83C175 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E507314805D44C7B9491A54F = {
+			isa = PBXGroup;
+			children = (
+				75C00DC10D2242578FBEA5AF /* Assignment_1 */,
+				40887FE018C640BEA0CFA817 /* ALL_BUILD */,
+				FD2C73F3E1504139A003AAED /* Products */,
+				C89793C50A294972B1CD1D4C /* Frameworks */,
+				D1F9D5DAC5334ED68B83C175 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		F90D7C03494541E1AC6E83D5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCC9215759147C79DB480B5 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Testable.h */,
+				4954B8102B2345CE9D8B98C7 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		FD2C73F3E1504139A003AAED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23EFD09FC1AF43E3909C7505 /* Assignment_1 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A764D230FD24D5684CFE947 /* Assignment_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76FCBE71CC374F8D84D6C5CF /* Build configuration list for PBXNativeTarget "Assignment_1" */;
+			buildPhases = (
+				8EADC56851674E8CBAF10790 /* Sources */,
+				E64308CE31A84DEF8E680030 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				717A5045912646F7AF1666ED /* PBXTargetDependency */,
+			);
+			name = Assignment_1;
+			productName = Assignment_1;
+			productReference = 23EFD09FC1AF43E3909C7505 /* Assignment_1 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8892E2AFCFA4B909BB196B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1520;
+			};
+			buildConfigurationList = 0343B00B8B264203AB19D1E5 /* Build configuration list for PBXProject "Assignment_1" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				075EA5820D6F4A0FA6DD6BA3 /* Debug */,
+				5E22E29F6B024988BC8492AE /* Release */,
+				F18EC33A11CB4EAABC4DE748 /* MinSizeRel */,
+				634D5955C7CB4176A0DEE205 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = E507314805D44C7B9491A54F;
+			projectDirPath = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35";
+			projectRoot = "";
+			targets = (
+				855F385D816647F5966C8CC6 /* ALL_BUILD */,
+				0A764D230FD24D5684CFE947 /* Assignment_1 */,
+				EEACE15A87FB4DAD885A958B /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A2C9DE633C08BC6E9362A350 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		ED0E8E051438F4B626990A53 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  make -f /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  make -f /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  make -f /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build
+  make -f /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8EADC56851674E8CBAF10790 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7718CB97AFB4E28AAEF6AB0 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/Variant.cpp */,
+				9794BC5C2BCC46CCA6809555 /* /Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/Source/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		717A5045912646F7AF1666ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEACE15A87FB4DAD885A958B /* ZERO_CHECK */;
+			targetProxy = 65BDC2B31BC74167961CBB33 /* PBXContainerItemProxy */;
+		};
+		9E3D21F93CC24241B8D87AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEACE15A87FB4DAD885A958B /* ZERO_CHECK */;
+			targetProxy = D70F7BC4671640BE9F6B3F19 /* PBXContainerItemProxy */;
+		};
+		C85988B2EC6745E3BF389F32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A764D230FD24D5684CFE947 /* Assignment_1 */;
+			targetProxy = 2949552E05594738844A6AAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02C560D0CCB649CB85D6CBA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		231D96428BE340C9BA50C167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++17' -Wall -Wextra -Wpedantic ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment_1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build/Assignment_1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		32588B05A3024F62BF29C446 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++17' -Wall -Wextra -Wpedantic ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment_1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build/Assignment_1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		374658B6CC49463B89E50C5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		41D041B86A5C4C70BD2355A6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		435F7E65FB3441B496152DA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		4D79DF69CAEE4DB79EAD5200 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		610CC303CEEB48E89CC69360 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		702ECF9750C648188F148420 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		7249F8A16E8644418270CE5E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7D862C5CBD644A408EAE4A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SYMROOT = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build";
+			};
+			name = Debug;
+		};
+		9866F397F3C34A0FAAE1FDA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -Wall -Wextra -Wpedantic ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment_1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build/Assignment_1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9AFBE91382934F3B807CC67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B59E3C5583C5407BBC121378 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build";
+			};
+			name = MinSizeRel;
+		};
+		B6DA50B39CA4447896559366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++17' -Wall -Wextra -Wpedantic ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Assignment_1;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build/Assignment_1.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		EA385004CDB94982A6E70BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = "/Users/jasonli/Documents/ece141a/pa1-variants-jasonli35/build/build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0343B00B8B264203AB19D1E5 /* Build configuration list for PBXProject "Assignment_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D862C5CBD644A408EAE4A6E /* Debug */,
+				EA385004CDB94982A6E70BEB /* Release */,
+				B59E3C5583C5407BBC121378 /* MinSizeRel */,
+				610CC303CEEB48E89CC69360 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6670A6DBB9BD4B6A8921A704 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435F7E65FB3441B496152DA0 /* Debug */,
+				4D79DF69CAEE4DB79EAD5200 /* Release */,
+				02C560D0CCB649CB85D6CBA3 /* MinSizeRel */,
+				41D041B86A5C4C70BD2355A6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		76FCBE71CC374F8D84D6C5CF /* Build configuration list for PBXNativeTarget "Assignment_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231D96428BE340C9BA50C167 /* Debug */,
+				B6DA50B39CA4447896559366 /* Release */,
+				9866F397F3C34A0FAAE1FDA3 /* MinSizeRel */,
+				32588B05A3024F62BF29C446 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9954DCC4351D4F48AC11246E /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				374658B6CC49463B89E50C5D /* Debug */,
+				9AFBE91382934F3B807CC67F /* Release */,
+				7249F8A16E8644418270CE5E /* MinSizeRel */,
+				702ECF9750C648188F148420 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8892E2AFCFA4B909BB196B0 /* Project object */;
+}

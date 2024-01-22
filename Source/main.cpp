@@ -6,21 +6,52 @@ bool doCompareTests() {
     ECE141::Variant theV0(100);
     ECE141::Variant theV1(theV0);
 
-    if (!(theV0 == theV1)) return false;
+    if (!(theV0 == theV1)) {
+        std::cout << "test for construct variant using copy constructor failed" << std::endl;
+        return false;
+    }
 
     ECE141::Variant theV2(200);
-    if (!(theV1 < theV2)) return false;
+    if (!(theV1 < theV2)){
+        std::cout << "test for simple less than failed" << std::endl;
+        return false;
+    }
 
     ECE141::Variant theV3(200.0f);
     theV0 = theV3;
-    if (!(theV0 == theV3)) return false;
-    if (!(theV1 < theV3)) return false;
-
+    if (!(theV0 == theV3)) {
+        std::cout << "test for == float and int failed" << std::endl;
+        return false;
+    }
+    if (!(theV1 < theV3)){
+        std::cout << " < float and int failed" << std::endl;
+        return false;
+    }
+    
     ECE141::Variant theV4("200");
     theV0 = theV4;
-    if (!(theV0 == theV4)) return false;
-    if (!(theV1 < theV4)) return false;
-
+    
+    std::optional<float> v4_float = theV4.asFloat();
+    std::cout << "expected 200, actual: " <<v4_float.value()  << std::endl;
+    
+    if (!(theV4.asFloat() > 100.0f)) {
+        std::cout << "test for convert string float to float failed and >" << std::endl;
+        return false;
+    }
+    
+    if (!(theV0 == theV4)) {
+        std::cout << "test for == with integer of string type" << std::endl;
+        return false;
+    }
+    
+//    std::cout << "expected optional<float>. actual: " << typeid(theV0.asFloat()).name() <<"  " << std::endl;
+  
+    std::cout << "theV1: " << theV1.asFloat().value() <<std::endl;
+    std::cout << "theV4: " << theV4.asFloat().value() <<std::endl;
+    if (!(theV1 < theV4)) {
+        std::cout << " < comparing string of float type and int" << std::endl;
+        return false;
+    }
     return true;
 }
 
@@ -81,9 +112,13 @@ int printTestMessage(const std::string& argument, const bool hasPassed) {
 }
 
 int main(int argc, const char* argv[]) {
+    
+    printTestMessage("compile", true);
+    printTestMessage("values", doValueTests());
+    printTestMessage("compare", doCompareTests());
+    
     if (argc > 1) {
         const std::string argument(argv[1]);
-
         if (argument == "compile")
             return printTestMessage(argument, true);
         if (argument == "values")
