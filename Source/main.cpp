@@ -44,10 +44,6 @@ bool doCompareTests() {
         return false;
     }
     
-//    std::cout << "expected optional<float>. actual: " << typeid(theV0.asFloat()).name() <<"  " << std::endl;
-  
-    std::cout << "theV1: " << theV1.asFloat().value() <<std::endl;
-    std::cout << "theV4: " << theV4.asFloat().value() <<std::endl;
     if (!(theV1 < theV4)) {
         std::cout << " < comparing string of float type and int" << std::endl;
         return false;
@@ -104,6 +100,51 @@ bool doValueTests() {
     return true;
 }
 
+bool testSetterInt() {
+    ECE141::Variant theV1(100);
+    theV1 = 500;
+    theV1 = 300;
+    if(theV1.asInt() != 300)
+        return false;
+    return true;
+}
+
+bool testSetterNegativeInt() {
+    ECE141::Variant theV1(100);
+    theV1 = -500;
+    theV1 = -300;
+    if(theV1.asInt() != -300)
+        return false;
+    return true;
+}
+
+bool testSimpleNotEqual() {
+    ECE141::Variant theV1(1);
+    ECE141::Variant theV2(1);
+    if(theV1 != theV2)
+        return false;
+    return true;
+}
+
+bool testSetterfloat() {
+    ECE141::Variant theV1(100);
+    theV1 = 3.14f;
+    ECE141::Variant theV2(3.14f);
+
+    if(theV1.asFloat() != theV2.asFloat())
+        return false;
+    return true;
+}
+
+bool testSetterNegativefloat() {
+    ECE141::Variant theV1(100);
+    theV1 = -500;
+    ECE141::Variant theV2(-300.0f);
+    if(theV1 != theV2)
+        return false;
+    return true;
+}
+
 // Returns appropriate exit code ('0' for a passing test, '1' for a failing test).
 int printTestMessage(const std::string& argument, const bool hasPassed) {
     std::cout << argument << " test " << (hasPassed ? "PASS" : "FAIL") << "\n";
@@ -111,14 +152,7 @@ int printTestMessage(const std::string& argument, const bool hasPassed) {
 }
 
 int main(int argc, const char* argv[]) {
-    
-//    printTestMessage("compile", true);
-//    printTestMessage("values", doValueTests());
-//    printTestMessage("compare", doCompareTests());
-//    
-//    ECE141::Variant theV0("pringtin");
-//    std::cout << theV0;
-    
+
     if (argc > 1) {
         const std::string argument(argv[1]);
         if (argument == "compile")
@@ -137,8 +171,11 @@ int main(int argc, const char* argv[]) {
     printTestMessage("compile", true);
     printTestMessage("values", doValueTests());
     printTestMessage("compare", doCompareTests());
-    
-    
+    printTestMessage("testSetterInt", testSetterInt());
+    printTestMessage("testSetterNegInt", testSetterNegativeInt());
+    printTestMessage("testSetterPositiveFloat", testSetterfloat());
+    printTestMessage("testSetterNegativeFloat", testSetterNegativefloat());
+    printTestMessage("testSimpleNotEqual", testSimpleNotEqual());
 
     return 0;
 }

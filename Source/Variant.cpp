@@ -57,7 +57,6 @@ namespace ECE141
         this->cValue = aCopy.cValue;
         return *this;
     }
-
     /**
      * @brief Setter function for integer.
      *
@@ -227,11 +226,11 @@ namespace ECE141
      * @return nullopt if it is uncomparable
      */
     std::optional<bool> Variant::operator!=(Variant aVar) const {
-        std::optional<int> result = compare_var(aVar);
+        std::optional<int> result =  compare_var(aVar);
         if(result == std::nullopt) {
             return std::nullopt;
         }
-        return !result;
+        return result != 0;
     }
     /**
      * @brief implement < operant
