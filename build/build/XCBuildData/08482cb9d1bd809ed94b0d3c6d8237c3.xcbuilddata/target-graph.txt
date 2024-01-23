@@ -1,7 +1,0 @@
-Target dependency graph (3 targets)
-Target 'ALL_BUILD' in project 'Assignment_1'
-➜ Explicit dependency on target 'Assignment_1' in project 'Assignment_1'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'Assignment_1'
-Target 'Assignment_1' in project 'Assignment_1'
-➜ Explicit dependency on target 'ZERO_CHECK' in project 'Assignment_1'
-Target 'ZERO_CHECK' in project 'Assignment_1' (no dependencies)

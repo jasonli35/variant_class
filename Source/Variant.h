@@ -1,3 +1,9 @@
+/*
+ * File: Variant.hpp
+ * Author: Jason Li
+ * Created on: January 22nd, 2023
+ * Description: Header file for a type-safe unio class that can hold integer, float, and string(char*).
+ */
 #pragma once
 #include <iostream>
 #include <optional>
@@ -22,6 +28,7 @@ namespace ECE141
         
         Variant(const Variant & aCopy);
         Variant& operator=(const Variant & aCopy);
+        
         ~Variant(){};
        
         Variant& operator=(int aValue);
@@ -33,8 +40,7 @@ namespace ECE141
         std::string asString() const; // Retrieve value as string
         VariantType getType() const; // Get current type of variant
         
-        bool isComparable(Variant aVar) const;
-        std::optional<int> compare_var(Variant other_variant) const;
+        std::optional<int> compare_var(Variant other_variant) const; //compare the current variant to another variant
         
         std::optional<bool> operator==(Variant aVar) const;
         std::optional<bool> operator!=(Variant aVar) const;
