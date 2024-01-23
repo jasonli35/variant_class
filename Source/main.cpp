@@ -134,7 +134,9 @@ int main(int argc, const char* argv[]) {
 
     // Run your code here
     std::cout << "Hello, World!" << std::endl;
-    
+    printTestMessage("compile", true);
+    printTestMessage("values", doValueTests());
+    printTestMessage("compare", doCompareTests());
     
     
 
